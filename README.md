@@ -1,17 +1,67 @@
-# getx_clean_architecture
+# GetX Clean Architecture
 
-A new Flutter project.
+A Flutter project demonstrating Clean Architecture using GetX and MVVM, adhering to SOLID principles.
 
-## Getting Started
+## 📌 Overview
+This project follows a structured approach to building scalable Flutter applications with GetX for state management and dependency injection. It implements Clean Architecture to separate concerns and improve maintainability.
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
+- **GetX for State Management**
+- **MVVM Architecture**
+- **Dio for API Calls**
+- **Interceptor for API Authorization**
+- **Caching with DioCacheInterceptor**
+- **Shared Preferences for Local Storage**
+- **SOLID Principles Implementation**
 
-A few resources to get you started if this is your first Flutter project:
+## 📂 Project Structure
+```
+lib/
+│
+├── common/                # Shared utilities, themes, constants
+│
+├── app/                  
+│   ├── exceptions/        # Custom exception handling
+│   ├── global_widgets/    # Reusable UI components
+│   ├── middlewares/       # Route guards and middlewares
+│   ├── models/            # Entity definitions (business models)
+│   ├── modules/           # Feature-based segregation 
+│   │   ├── auth/          
+│   │   │   ├── bindings/      # Dependency bindings
+│   │   │   ├── controllers/   # State management using GetX
+│   │   │   ├── services/      # Business logic and use cases
+│   │   │   ├── views/         # UI components
+│   │   │   ├── widgets/       # Reusable widgets on module level
+│   │   ├── dashboard/        
+│   │   ├── root/          # Root navigation & app entry point
+│   ├── providers/         # API services and data sources
+│   ├── routes/            # Navigation and route management
+│   ├── services/          # Global services (e.g., Auth, Storage)
+│
+├── main.dart              # Application entry point
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🔧 Setup & Run
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/getx_clean_architecture.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd getx_clean_architecture
+   ```
+3. Install dependencies:
+   ```sh
+   flutter pub get
+   ```
+4. Run the project:
+   ```sh
+   flutter run
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# getx_cleanarchitecture
+## 📝 Article
+For a detailed explanation, check out the Medium article: [Implementing Clean Architecture with GetX and MVVM in Flutter](#).
+
+---
+
+🔹 *Follow best practices, explore different approaches, and refine your architecture based on your project needs.*
