@@ -12,7 +12,7 @@ void main() async {
 
   runApp(
     GetMaterialApp(
-      title: 'Bossie',
+      title: 'GetX',
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       debugShowCheckedModeBanner: false,
