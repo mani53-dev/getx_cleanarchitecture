@@ -2,7 +2,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import '../../../../common/ui.dart';
 import '../../../models/user_model.dart';
 import '../../../routes/app_routes.dart';
 import '../../../services/background/user_service.dart';
@@ -39,7 +38,7 @@ class RegisterController extends GetxController {
     try {
       // await authService.performAuth(currentUser.value);
       Get.toNamed(Routes.ROOT);
-    } on DioException catch (e) {
+    } on DioException {
       // Get.showSnackbar(Ui.ErrorSnackBar(message: e.message!.toString()));
     } finally {
       loading.value = false;

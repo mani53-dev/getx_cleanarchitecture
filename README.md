@@ -60,7 +60,7 @@ lib/
    ```
 
 ## 📝 Article
-For a detailed explanation, check out the Medium article: [Implementing Clean Architecture with GetX and MVVM in Flutter](#).
+For a detailed explanation, check out the Medium article: [Implementing Clean Architecture with GetX and MVVM in Flutter](https://medium.com/@manikhan53/implementing-clean-architecture-with-getx-and-mvvm-in-flutter-adhering-to-solid-principles-8487994b993a).
 
 ---
 

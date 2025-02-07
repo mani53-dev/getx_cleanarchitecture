@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:get/get.dart';
 import 'package:getx_clean_architecture/app/models/user_model.dart';
 

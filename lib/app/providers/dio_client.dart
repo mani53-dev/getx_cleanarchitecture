@@ -4,7 +4,6 @@ import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import '../exceptions/network_exceptions.dart';
-import '../routes/app_routes.dart';
 import '../services/background/user_service.dart';
 
 class DioClient {

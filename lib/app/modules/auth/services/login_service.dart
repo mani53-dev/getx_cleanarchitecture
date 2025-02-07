@@ -35,7 +35,7 @@ class LoginService implements AuthService {
 
 extension LoginUser on User {
   JsonMap toJsonForSignIn() => {
-    'email': email,
-    'password': password,
-  };
+        'email': email,
+        'password': password,
+      };
 }
